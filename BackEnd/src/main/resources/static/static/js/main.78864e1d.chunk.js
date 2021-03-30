@@ -8,13 +8,13 @@
         "use strict";
         a.r(t);
         var n = a(0), c = a.n(n), i = a(15), r = a.n(i), o = (a(126), a(51)), s = a(17), l = a(9), d = a(195),
-            u = a(194), b = a(71), j = a(73), m = a(70), p = a(110), h = Object(p.a)({
+            u = a(194), j = a(71), b = a(73), m = a(70), h = a(110), p = Object(h.a)({
                 palette: {
                     primary: {light: "#69696a", main: "#28282a", dark: "#1e1e1f"},
                     secondary: {light: "#f5f7ff", main: "#4a6eff", dark: "#282c40"},
                     warning: {main: "#ffc071", dark: "#ffb25e"},
-                    error: {light: b.a[50], main: b.a[500], dark: b.a[500]},
-                    success: {light: j.a[50], main: j.a[500], dark: j.a[500]}
+                    error: {light: j.a[50], main: j.a[500], dark: j.a[500]},
+                    success: {light: b.a[50], main: b.a[500], dark: b.a[500]}
                 },
                 typography: {
                     fontFamily: "'Sen', 'ELAND_Choice_M', sans-serif",
@@ -24,30 +24,30 @@
                     fontWeightMedium: 700
                 }
             }), g = {
-                color: h.palette.text.primary,
-                fontWeight: h.typography.fontWeightMedium,
-                fontFamily: h.typography.fontFamily
-            }, O = Object(l.a)(Object(l.a)({}, h), {}, {
-                palette: Object(l.a)(Object(l.a)({}, h.palette), {}, {
-                    background: Object(l.a)(Object(l.a)({}, h.palette.background), {}, {
-                        default: h.palette.common.white,
+                color: p.palette.text.primary,
+                fontWeight: p.typography.fontWeightMedium,
+                fontFamily: p.typography.fontFamily
+            }, O = Object(l.a)(Object(l.a)({}, p), {}, {
+                palette: Object(l.a)(Object(l.a)({}, p.palette), {}, {
+                    background: Object(l.a)(Object(l.a)({}, p.palette.background), {}, {
+                        default: p.palette.common.white,
                         placeholder: m.a[200]
                     })
                 }),
-                typography: Object(l.a)(Object(l.a)({}, h.typography), {}, {
+                typography: Object(l.a)(Object(l.a)({}, p.typography), {}, {
                     fontHeader: g,
-                    h1: Object(l.a)(Object(l.a)(Object(l.a)({}, h.typography.h1), g), {}, {letterSpacing: 0, fontSize: 60}),
-                    h2: Object(l.a)(Object(l.a)(Object(l.a)({}, h.typography.h2), g), {}, {fontSize: 52}),
-                    h3: Object(l.a)(Object(l.a)(Object(l.a)({}, h.typography.h3), g), {}, {fontSize: 42}),
-                    h4: Object(l.a)(Object(l.a)(Object(l.a)({}, h.typography.h4), g), {}, {fontSize: 36}),
-                    h5: Object(l.a)(Object(l.a)({}, h.typography.h5), {}, {
+                    h1: Object(l.a)(Object(l.a)(Object(l.a)({}, p.typography.h1), g), {}, {letterSpacing: 0, fontSize: 60}),
+                    h2: Object(l.a)(Object(l.a)(Object(l.a)({}, p.typography.h2), g), {}, {fontSize: 52}),
+                    h3: Object(l.a)(Object(l.a)(Object(l.a)({}, p.typography.h3), g), {}, {fontSize: 42}),
+                    h4: Object(l.a)(Object(l.a)(Object(l.a)({}, p.typography.h4), g), {}, {fontSize: 36}),
+                    h5: Object(l.a)(Object(l.a)({}, p.typography.h5), {}, {
                         fontSize: 20,
                         fontFamily: "JSDongkang-Regular",
-                        fontWeight: h.typography.fontWeightLight
+                        fontWeight: p.typography.fontWeightLight
                     }),
-                    h6: Object(l.a)(Object(l.a)(Object(l.a)({}, h.typography.h6), g), {}, {fontSize: 18}),
-                    subtitle1: Object(l.a)(Object(l.a)({}, h.typography.subtitle1), {}, {fontSize: 18}),
-                    body1: Object(l.a)(Object(l.a)({}, h.typography.body1), {}, {fontSize: 14})
+                    h6: Object(l.a)(Object(l.a)(Object(l.a)({}, p.typography.h6), g), {}, {fontSize: 18}),
+                    subtitle1: Object(l.a)(Object(l.a)({}, p.typography.subtitle1), {}, {fontSize: 18}),
+                    body1: Object(l.a)(Object(l.a)({}, p.typography.body1), {}, {fontSize: 14})
                 })
             }), x = a(1);
 
@@ -101,17 +101,17 @@
                             underline: "none",
                             color: "inherit",
                             href: "/",
-                            children: Object(x.jsx)("img", {src: "/assets/logo.png", alt: "logo", className: t.logo})
+                            children: Object(x.jsx)("img", {src: "static/logo.png", alt: "logo", className: t.logo})
                         }), Object(x.jsxs)("div", {
                             className: t.right,
                             children: [Object(x.jsx)(C.a, {
                                 className: t.langIcon, onClick: function () {
                                     return a("ko")
-                                }, children: Object(x.jsx)("img", {src: "/assets/kor.svg", alt: "kor"})
+                                }, children: Object(x.jsx)("img", {src: "static/kor.svg", alt: "kor"})
                             }), Object(x.jsx)(C.a, {
                                 className: t.langIcon, onClick: function () {
                                     return a("en")
-                                }, children: Object(x.jsx)("img", {src: "/assets/eng.svg", alt: "eng"})
+                                }, children: Object(x.jsx)("img", {src: "static/eng.svg", alt: "eng"})
                             })]
                         })]
                     })
@@ -303,7 +303,7 @@
                     className: t.root, children: Object(x.jsxs)(T.a, {
                         className: t.container,
                         children: [Object(x.jsx)("img", {
-                            src: "/assets/hologram.png",
+                            src: "static/hologram.png",
                             className: t.hologram,
                             alt: "back hologram"
                         }), Object(x.jsx)(_, {
@@ -326,7 +326,7 @@
                                             className: t.number,
                                             children: "1."
                                         }), Object(x.jsx)("img", {
-                                            src: "/assets/file_add.svg",
+                                            src: "static/file_add.svg",
                                             alt: "file_add",
                                             className: t.image
                                         }), Object(x.jsxs)(_, {
@@ -345,7 +345,7 @@
                                             className: t.number,
                                             children: "2."
                                         }), Object(x.jsx)("img", {
-                                            src: "/assets/executing.svg",
+                                            src: "static/executing.svg",
                                             alt: "execute",
                                             className: t.image
                                         }), Object(x.jsxs)(_, {
@@ -364,7 +364,7 @@
                                             className: t.number,
                                             children: "3."
                                         }), Object(x.jsx)("img", {
-                                            src: "/assets/diagram.svg",
+                                            src: "static/diagram.svg",
                                             alt: "file_add",
                                             className: t.image
                                         }), Object(x.jsxs)(_, {
@@ -478,7 +478,7 @@
                                 justify: "flex-start",
                                 className: e.iconsWrapperSecondary,
                                 children: Object(x.jsx)("img", {
-                                    src: "/assets/logo.png",
+                                    src: "static/logo.png",
                                     alt: "logo",
                                     className: e.logoIcons
                                 })
@@ -517,7 +517,7 @@
                                         children: Object(x.jsx)("a", {
                                             href: "https://github.com/newForinux",
                                             className: e.icons,
-                                            children: Object(x.jsx)("img", {src: "/assets/github.svg", alt: "Github"})
+                                            children: Object(x.jsx)("img", {src: "static/github.svg", alt: "Github"})
                                         })
                                     }), Object(x.jsx)(Q.a, {
                                         item: !0,
@@ -525,7 +525,7 @@
                                         children: Object(x.jsx)("a", {
                                             href: "https://github.com/Yessir-kim",
                                             className: e.icons,
-                                            children: Object(x.jsx)("img", {src: "/assets/github.svg", alt: "Github"})
+                                            children: Object(x.jsx)("img", {src: "static/github.svg", alt: "Github"})
                                         })
                                     })]
                                 })]
@@ -540,7 +540,7 @@
                                     item: !0,
                                     className: e.backgroundIcons,
                                     children: Object(x.jsx)("img", {
-                                        src: "/assets/hand.png",
+                                        src: "static/hand.png",
                                         alt: "Handong",
                                         className: e.backgroundIcons
                                     })
@@ -548,7 +548,7 @@
                                     item: !0,
                                     className: e.backgroundIcons,
                                     children: Object(x.jsx)("img", {
-                                        src: "/assets/ISEL-t.png",
+                                        src: "static/ISEL-t.png",
                                         alt: "ISEL",
                                         className: e.labIcons
                                     })
@@ -568,12 +568,12 @@
         var re = c.a.memo(f((function () {
                 return Object(x.jsxs)(c.a.Fragment, {children: [Object(x.jsx)(P, {}), Object(x.jsx)(U, {}), Object(x.jsx)(Z, {}), Object(x.jsx)(ee, {}), Object(x.jsx)(ie, {})]})
             }))), oe = a(3), se = a(215), le = a(206), de = a(68), ue = a.n(de),
-            be = "https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-            je = Object(te.a)((function (e) {
+            je = "https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            be = Object(te.a)((function (e) {
                 var t;
                 return {
                     background: {
-                        backgroundImage: "url(".concat(be, ")"),
+                        backgroundImage: "url(".concat(je, ")"),
                         backgroundColor: "#5d5447",
                         backgroundPosition: "center"
                     },
@@ -589,13 +589,13 @@
                 }
             }));
         var me = c.a.memo(f((function (e) {
-                var t = je(), a = Object(n.useState)(""), c = Object(oe.a)(a, 2), i = c[0], r = c[1], s = Object(V.a)().t;
+                var t = be(), a = Object(n.useState)(""), c = Object(oe.a)(a, 2), i = c[0], r = c[1], s = Object(V.a)().t;
                 return Object(x.jsxs)(x.Fragment, {
                     children: [Object(x.jsx)(P, {}), Object(x.jsxs)(R, {
                         backgroundClassName: t.background,
                         children: [Object(x.jsx)("img", {
                             style: {display: "none"},
-                            src: be,
+                            src: je,
                             alt: "prioirty"
                         }), Object(x.jsx)(_, {
                             color: "inherit",
@@ -634,14 +634,14 @@
                         })]
                     }), Object(x.jsx)(ie, {})]
                 })
-            }))), pe = a(218), he = a(207), ge = a(208), Oe = a(209), xe = a(205), fe = a(212), ye = a(217), ve = a(210),
+            }))), he = a(218), pe = a(207), ge = a(208), Oe = a(209), xe = a(205), fe = a(212), ye = a(217), ve = a(210),
             ke = a(211), Ce = a(38), Se = a.n(Ce), we = a(74), Ne = a(19), De = a(22), Ee = a.n(De),
             We = Object(te.a)({buttonRight: {float: "right", position: "relative"}});
 
         function Me(e) {
             var t = Object(V.a)().t, a = We(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["cs-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["cs-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -652,13 +652,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-cs",
@@ -666,7 +666,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-cs",
                     children: t("policy.class.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -677,7 +677,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "cs-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -727,7 +727,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "cs-" + a,
                                         label: t("class name"),
@@ -747,7 +747,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -757,24 +757,24 @@
         function ze(e) {
             var t = Object(V.a)().t, a = e.open, c = Object(n.useState)(a), i = Object(oe.a)(c, 2), r = i[0], o = i[1],
                 s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1],
-                b = Object(n.useState)({state: !1, deductPoint: 0}), j = Object(oe.a)(b, 2), m = j[0], p = j[1];
+                j = Object(n.useState)({state: !1, deductPoint: 0}), b = Object(oe.a)(j, 2), m = b[0], h = b[1];
             Object(n.useEffect)((function () {
                 a && o(!0)
             }), [a]), Object(n.useEffect)((function () {
                 e.onCreate("javadoc", m)
             }), [m]);
-            var h = function () {
-                p({state: !1, deductPoint: 0}), o(!1)
+            var p = function () {
+                h({state: !1, deductPoint: 0}), o(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: r,
-                onClose: h,
+                onClose: p,
                 "aria-labelledby": "form-dialog-jvd",
                 maxWidth: "sm",
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-pk",
                     children: t("policy.compiled.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -798,12 +798,12 @@
                     })]
                 }), Object(x.jsxs)(ve.a, {
                     children: [Object(x.jsx)(C.a, {
-                        onClick: h,
+                        onClick: p,
                         color: "primary",
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            p({state: !0, deductPoint: d}), o(!1)
+                            h({state: !0, deductPoint: d}), o(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -812,8 +812,8 @@
 
         function Fe(e) {
             var t = Object(V.a)().t, a = e.open, c = Object(n.useState)(a), i = Object(oe.a)(c, 2), r = i[0], o = i[1],
-                s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1], b = Object(n.useState)(0),
-                j = Object(oe.a)(b, 2), m = j[0], p = j[1], h = Object(n.useState)(0), g = Object(oe.a)(h, 2), O = g[0],
+                s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1], j = Object(n.useState)(0),
+                b = Object(oe.a)(j, 2), m = b[0], h = b[1], p = Object(n.useState)(0), g = Object(oe.a)(p, 2), O = g[0],
                 f = g[1], y = Object(n.useState)(0), v = Object(oe.a)(y, 2), k = v[0], S = v[1],
                 w = Object(n.useState)({state: !1, methodCount: 0, fieldCount: 0, enForCount: 0, deductPoint: 0}),
                 N = Object(oe.a)(w, 2), D = N[0], E = N[1];
@@ -825,7 +825,7 @@
             var W = function () {
                 E({state: !1, methodCount: 0, fieldCount: 0, enForCount: 0, deductPoint: 0}), o(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: r,
                 onClose: W,
                 "aria-labelledby": "form-dialog-cnt",
@@ -833,7 +833,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-cnt",
                     children: t("policy.count.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -863,7 +863,7 @@
                                 size: "small",
                                 margin: "normal",
                                 onChange: function (e) {
-                                    return p(parseInt(e.target.value) || m)
+                                    return h(parseInt(e.target.value) || m)
                                 }
                             }), Object(x.jsx)(se.a, {
                                 type: "number",
@@ -904,8 +904,8 @@
 
         function Pe(e) {
             var t = Object(V.a)().t, a = Ie(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["cds-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["cds-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -916,13 +916,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-cds",
@@ -930,7 +930,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-cds",
                     children: t("policy.custom.ds.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -941,7 +941,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "cds-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -991,7 +991,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "cds-" + a,
                                         label: t("class name"),
@@ -1011,7 +1011,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1022,8 +1022,8 @@
 
         function Te(e) {
             var t = Object(V.a)().t, a = He(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["cec-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["cec-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1034,13 +1034,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-cec",
@@ -1048,7 +1048,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-cec",
                     children: t("policy.custom.ex.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1059,7 +1059,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "cec-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1109,7 +1109,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "cec-" + a,
                                         label: t("class name"),
@@ -1129,7 +1129,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1139,24 +1139,24 @@
         function Be(e) {
             var t = Object(V.a)().t, a = e.open, c = Object(n.useState)(a), i = Object(oe.a)(c, 2), r = i[0], o = i[1],
                 s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1],
-                b = Object(n.useState)({state: !1, deductPoint: 0}), j = Object(oe.a)(b, 2), m = j[0], p = j[1];
+                j = Object(n.useState)({state: !1, deductPoint: 0}), b = Object(oe.a)(j, 2), m = b[0], h = b[1];
             Object(n.useEffect)((function () {
                 a && o(!0)
             }), [a]), Object(n.useEffect)((function () {
                 e.onCreate("encapsulation", m)
             }), [m]);
-            var h = function () {
-                p({state: !1, deductPoint: 0}), o(!1)
+            var p = function () {
+                h({state: !1, deductPoint: 0}), o(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: r,
-                onClose: h,
+                onClose: p,
                 "aria-labelledby": "form-dialog-enc",
                 maxWidth: "sm",
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-pk",
                     children: t("policy.encap.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1180,12 +1180,12 @@
                     })]
                 }), Object(x.jsxs)(ve.a, {
                     children: [Object(x.jsx)(C.a, {
-                        onClick: h,
+                        onClick: p,
                         color: "primary",
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            p({state: !0, deductPoint: d}), o(!1)
+                            h({state: !0, deductPoint: d}), o(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1196,8 +1196,8 @@
 
         function qe(e) {
             var t = Object(V.a)().t, a = Re(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["itf-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["itf-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1208,20 +1208,20 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-itf",
                 maxWidth: "md",
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-itf",
                     children: t("policy.interface.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1232,7 +1232,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "itf-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1281,7 +1281,7 @@
                                 children: Object(x.jsx)(xe.a, {
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "itf-" + a,
                                         label: t("interface name"),
@@ -1301,7 +1301,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1312,8 +1312,8 @@
 
         function Ae(e) {
             var t = Object(V.a)().t, a = Ge(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["io-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)([""]),
+                s = r[1], l = Object(n.useState)(["io-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)([""]),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)(0), D = Object(oe.a)(N, 2), E = D[0], W = D[1],
                 M = Object(n.useState)({state: !1, input: [], output: [], deductPoint: 0, maxDeduct: 0}),
@@ -1330,13 +1330,13 @@
                 }
             }, H = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, T = function () {
                 I({state: !1, input: [], output: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: T,
                 "aria-labelledby": "form-dialog-io",
@@ -1344,7 +1344,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-io",
                     children: t("policy.io.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1355,7 +1355,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "io-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1420,7 +1420,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "out-" + a,
                                         label: t("policy.io.output"),
@@ -1440,7 +1440,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            I({state: !0, input: f, output: p, deductPoint: S, maxDeduct: E}), s(!1)
+                            I({state: !0, input: f, output: h, deductPoint: S, maxDeduct: E}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1450,24 +1450,24 @@
         function Le(e) {
             var t = Object(V.a)().t, a = e.open, c = Object(n.useState)(a), i = Object(oe.a)(c, 2), r = i[0], o = i[1],
                 s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1],
-                b = Object(n.useState)({state: !1, deductPoint: 0}), j = Object(oe.a)(b, 2), m = j[0], p = j[1];
+                j = Object(n.useState)({state: !1, deductPoint: 0}), b = Object(oe.a)(j, 2), m = b[0], h = b[1];
             Object(n.useEffect)((function () {
                 a && o(!0)
             }), [a]), Object(n.useEffect)((function () {
                 e.onCreate("javadoc", m)
             }), [m]);
-            var h = function () {
-                p({state: !1, deductPoint: 0}), o(!1)
+            var p = function () {
+                h({state: !1, deductPoint: 0}), o(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: r,
-                onClose: h,
+                onClose: p,
                 "aria-labelledby": "form-dialog-jvd",
                 maxWidth: "sm",
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-pk",
                     children: t("policy.javadoc.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1491,12 +1491,12 @@
                     })]
                 }), Object(x.jsxs)(ve.a, {
                     children: [Object(x.jsx)(C.a, {
-                        onClick: h,
+                        onClick: p,
                         color: "primary",
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            p({state: !0, deductPoint: d}), o(!1)
+                            h({state: !0, deductPoint: d}), o(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1507,8 +1507,8 @@
 
         function Ye(e) {
             var t = Object(V.a)().t, a = _e(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["ovl-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["ovl-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1519,13 +1519,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-ovl",
@@ -1533,7 +1533,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-ovl",
                     children: t("policy.overloading.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1544,7 +1544,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "ovr-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1594,7 +1594,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "ovl-" + a,
                                         label: t("method name"),
@@ -1614,7 +1614,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1625,8 +1625,8 @@
 
         function Ke(e) {
             var t = Object(V.a)().t, a = Je(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["ovr-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["ovr-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1637,13 +1637,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-ovr",
@@ -1651,7 +1651,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-ovr",
                     children: t("policy.overriding.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1662,7 +1662,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "ovr-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1712,7 +1712,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "ovr-" + a,
                                         label: t("method name"),
@@ -1732,7 +1732,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1743,8 +1743,8 @@
 
         function Xe(e) {
             var t = Object(V.a)().t, a = Ve(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["pk-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["pk-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1755,13 +1755,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: z,
                 "aria-labelledby": "form-dialog-pk",
@@ -1769,7 +1769,7 @@
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-pk",
                     children: t("policy.package.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1780,7 +1780,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "pk-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1830,7 +1830,7 @@
                                     fullWidth: !0,
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "pk-" + a,
                                         label: t("package path"),
@@ -1850,7 +1850,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1861,8 +1861,8 @@
 
         function Qe(e) {
             var t = Object(V.a)().t, a = Ue(), c = e.open, i = Object(n.useState)(c), r = Object(oe.a)(i, 2), o = r[0],
-                s = r[1], l = Object(n.useState)(["spc-0"]), d = Object(oe.a)(l, 2), u = d[0], b = d[1],
-                j = Object(n.useState)([""]), m = Object(oe.a)(j, 2), p = m[0], h = m[1], g = Object(n.useState)(0),
+                s = r[1], l = Object(n.useState)(["spc-0"]), d = Object(oe.a)(l, 2), u = d[0], j = d[1],
+                b = Object(n.useState)([""]), m = Object(oe.a)(b, 2), h = m[0], p = m[1], g = Object(n.useState)(0),
                 O = Object(oe.a)(g, 2), f = O[0], y = O[1], v = Object(n.useState)(0), k = Object(oe.a)(v, 2), S = k[0],
                 w = k[1], N = Object(n.useState)({state: !1, required: [], deductPoint: 0, maxDeduct: 0}),
                 D = Object(oe.a)(N, 2), E = D[0], W = D[1];
@@ -1873,13 +1873,13 @@
             }), [E]);
             var M = function (e) {
                 return function (t) {
-                    var a = Object(Ne.a)(p);
-                    a[e] = t.target.value, h(a)
+                    var a = Object(Ne.a)(h);
+                    a[e] = t.target.value, p(a)
                 }
             }, z = function () {
                 W({state: !1, required: [], deductPoint: 0, maxDeduct: 0}), s(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: o,
                 onClose: function (e, t) {
                     "backdropClick" !== t && z()
@@ -1888,7 +1888,7 @@
                 maxWidth: "md",
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-spc",
                     children: t("policy.super.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -1899,7 +1899,7 @@
                             onClick: function () {
                                 return function () {
                                     var e = "spc-".concat(u.length);
-                                    b((function (t) {
+                                    j((function (t) {
                                         return t.concat([e])
                                     }))
                                 }()
@@ -1948,7 +1948,7 @@
                                 children: Object(x.jsx)(xe.a, {
                                     margin: "normal",
                                     children: Object(x.jsx)(se.a, {
-                                        value: p[a] || "",
+                                        value: h[a] || "",
                                         variant: "outlined",
                                         id: "spc-" + a,
                                         label: t("class name"),
@@ -1968,7 +1968,7 @@
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            W({state: !0, required: p, deductPoint: f, maxDeduct: S}), s(!1)
+                            W({state: !0, required: h, deductPoint: f, maxDeduct: S}), s(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -1978,24 +1978,24 @@
         function Ze(e) {
             var t = Object(V.a)().t, a = e.open, c = Object(n.useState)(a), i = Object(oe.a)(c, 2), r = i[0], o = i[1],
                 s = Object(n.useState)(0), l = Object(oe.a)(s, 2), d = l[0], u = l[1],
-                b = Object(n.useState)({state: !1, deductPoint: 0}), j = Object(oe.a)(b, 2), m = j[0], p = j[1];
+                j = Object(n.useState)({state: !1, deductPoint: 0}), b = Object(oe.a)(j, 2), m = b[0], h = b[1];
             Object(n.useEffect)((function () {
                 a && o(!0)
             }), [a]), Object(n.useEffect)((function () {
                 e.onCreate("thread", m)
             }), [m]);
-            var h = function () {
-                p({state: !1, deductPoint: 0}), o(!1)
+            var p = function () {
+                h({state: !1, deductPoint: 0}), o(!1)
             };
-            return Object(x.jsxs)(pe.a, {
+            return Object(x.jsxs)(he.a, {
                 open: r,
-                onClose: h,
+                onClose: p,
                 "aria-labelledby": "form-dialog-thd",
                 maxWidth: "sm",
                 fullWidth: !0,
                 scroll: "paper",
                 disableEscapeKeyDown: !0,
-                children: [Object(x.jsx)(he.a, {
+                children: [Object(x.jsx)(pe.a, {
                     id: "form-dialog-pk",
                     children: t("policy.thread.1")
                 }), Object(x.jsxs)(ge.a, {
@@ -2019,12 +2019,12 @@
                     })]
                 }), Object(x.jsxs)(ve.a, {
                     children: [Object(x.jsx)(C.a, {
-                        onClick: h,
+                        onClick: p,
                         color: "primary",
                         children: t("closed")
                     }), Object(x.jsx)(C.a, {
                         onClick: function () {
-                            p({state: !0, deductPoint: d}), o(!1)
+                            h({state: !0, deductPoint: d}), o(!1)
                         }, color: "primary", children: t("submit")
                     })]
                 })]
@@ -2074,22 +2074,22 @@
                     thread: {state: !1},
                     encapsulation: {state: !1}
                 }, i = Object(n.useState)(e.state), r = Object(oe.a)(i, 2), o = r[0], s = r[1], d = Object(n.useState)(c),
-                u = Object(oe.a)(d, 2), b = u[0], j = u[1], m = Object(n.useState)(a), p = Object(oe.a)(m, 2), h = p[0],
-                g = p[1], O = function () {
+                u = Object(oe.a)(d, 2), j = u[0], b = u[1], m = Object(n.useState)(a), h = Object(oe.a)(m, 2), p = h[0],
+                g = h[1], O = function () {
                     s(!1), g(a)
                 }, f = function (e) {
-                    "thread" !== e.target.name && "javadoc" !== e.target.name && "encapsulation" !== e.target.name || j(Object(we.a)((function (t) {
+                    "thread" !== e.target.name && "javadoc" !== e.target.name && "encapsulation" !== e.target.name || b(Object(we.a)((function (t) {
                         t[e.target.name] = e.target.checked
                     }))), g(Object(we.a)((function (t) {
                         t[e.target.name] = e.target.checked
                     })))
                 }, y = function (e, t) {
-                    j(Object(we.a)((function (a) {
+                    b(Object(we.a)((function (a) {
                         a[e] = t
                     })))
                 };
             return Object(x.jsx)("div", {
-                children: o && Object(x.jsxs)(pe.a, {
+                children: o && Object(x.jsxs)(he.a, {
                     open: o,
                     onClose: O,
                     "aria-labelledby": "form-dialog-title",
@@ -2097,102 +2097,102 @@
                     disableEscapeKeyDown: !0,
                     maxWidth: "md",
                     scroll: "paper",
-                    children: [Object(x.jsx)(he.a, {
+                    children: [Object(x.jsx)(pe.a, {
                         id: "form-dialog-title",
                         children: t("dialog.1")
                     }), Object(x.jsxs)(ge.a, {
                         dividers: !0,
                         children: [Object(x.jsx)(Oe.a, {children: t("dialog.2")}), Object(x.jsx)(se.a, {
                             type: "number",
-                            value: b.point,
+                            value: j.point,
                             label: t("policy.point"),
                             size: "small",
                             margin: "dense",
                             onChange: function (e) {
-                                return j(Object(l.a)(Object(l.a)({}, b), {}, {point: parseFloat(e.target.value) || b.point}))
+                                return b(Object(l.a)(Object(l.a)({}, j), {}, {point: parseFloat(e.target.value) || j.point}))
                             }
                         }), Object(x.jsxs)(ke.a, {
                             children: [Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.count,
+                                    checked: p.count,
                                     onChange: f,
                                     name: "count"
                                 }), label: "Count"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.compiled,
+                                    checked: p.compiled,
                                     onChange: f,
                                     name: "compiled"
                                 }), label: "Compile"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.inputs,
+                                    checked: p.inputs,
                                     onChange: f,
                                     name: "inputs"
                                 }), label: "Input"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.classes,
+                                    checked: p.classes,
                                     onChange: f,
                                     name: "classes"
                                 }), label: "Classes"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.packages,
+                                    checked: p.packages,
                                     onChange: f,
                                     name: "packages"
                                 }), label: "Packages"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.interfaces,
+                                    checked: p.interfaces,
                                     onChange: f,
                                     name: "interfaces"
                                 }), label: "Interface"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.superclass,
+                                    checked: p.superclass,
                                     onChange: f,
                                     name: "superclass"
                                 }), label: "Superclass"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.overriding,
+                                    checked: p.overriding,
                                     onChange: f,
                                     name: "overriding"
                                 }), label: "Overriding"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.overloading,
+                                    checked: p.overloading,
                                     onChange: f,
                                     name: "overloading"
                                 }), label: "Overloading"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.custexc,
+                                    checked: p.custexc,
                                     onChange: f,
                                     name: "custexc"
                                 }), label: "Custom Exception Class"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.custstr,
+                                    checked: p.custstr,
                                     onChange: f,
                                     name: "custstr"
                                 }), label: "Custom Data Structure Class"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.thread,
+                                    checked: p.thread,
                                     onChange: f,
                                     name: "thread"
                                 }), label: "Threads"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.javadoc,
+                                    checked: p.javadoc,
                                     onChange: f,
                                     name: "javadoc"
                                 }), label: "Javadoc"
                             }), Object(x.jsx)(fe.a, {
                                 control: Object(x.jsx)(ye.a, {
-                                    checked: h.encapsulation,
+                                    checked: p.encapsulation,
                                     onChange: f,
                                     name: "encapsulation"
                                 }), label: "Encapsulation"
@@ -2205,64 +2205,64 @@
                             children: t("closed")
                         }), Object(x.jsx)(C.a, {
                             onClick: function () {
-                                Se.a.post("/api/token/save", JSON.stringify(b, null, 2), {headers: {"Content-Type": "application/json"}}).then((function (e) {
+                                Se.a.post("/api/token/save", JSON.stringify(j, null, 2), {headers: {"Content-Type": "application/json"}}).then((function (e) {
                                     s(!1), g(a)
-                                })), console.log(JSON.stringify(b, null, 2))
+                                })), console.log(JSON.stringify(j, null, 2))
                             }, color: "primary", children: t("submit")
                         })]
-                    }), h.count && Object(x.jsx)(Fe, {
-                        open: h.count,
+                    }), p.count && Object(x.jsx)(Fe, {
+                        open: p.count,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.compiled && Object(x.jsx)(ze, {
-                        open: h.compiled,
+                    }), p.compiled && Object(x.jsx)(ze, {
+                        open: p.compiled,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.inputs && Object(x.jsx)(Ae, {
-                        open: h.inputs,
+                    }), p.inputs && Object(x.jsx)(Ae, {
+                        open: p.inputs,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.classes && Object(x.jsx)(Me, {
-                        open: h.classes,
+                    }), p.classes && Object(x.jsx)(Me, {
+                        open: p.classes,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.packages && Object(x.jsx)(Xe, {
-                        open: h.packages,
+                    }), p.packages && Object(x.jsx)(Xe, {
+                        open: p.packages,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.interfaces && Object(x.jsx)(qe, {
-                        open: h.interfaces,
+                    }), p.interfaces && Object(x.jsx)(qe, {
+                        open: p.interfaces,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.superclass && Object(x.jsx)(Qe, {
-                        open: h.superclass,
+                    }), p.superclass && Object(x.jsx)(Qe, {
+                        open: p.superclass,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.overriding && Object(x.jsx)(Ke, {
-                        open: h.overriding,
+                    }), p.overriding && Object(x.jsx)(Ke, {
+                        open: p.overriding,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.overloading && Object(x.jsx)(Ye, {
-                        open: h.overloading,
+                    }), p.overloading && Object(x.jsx)(Ye, {
+                        open: p.overloading,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.custexc && Object(x.jsx)(Te, {
-                        open: h.custexc,
+                    }), p.custexc && Object(x.jsx)(Te, {
+                        open: p.custexc,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.custstr && Object(x.jsx)(Pe, {
-                        open: h.custstr,
+                    }), p.custstr && Object(x.jsx)(Pe, {
+                        open: p.custstr,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.javadoc && Object(x.jsx)(Le, {
-                        open: h.javadoc,
+                    }), p.javadoc && Object(x.jsx)(Le, {
+                        open: p.javadoc,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.thread && Object(x.jsx)(Ze, {
-                        open: h.thread,
+                    }), p.thread && Object(x.jsx)(Ze, {
+                        open: p.thread,
                         onCreate: y,
                         keepMounted: !0
-                    }), h.encapsulation && Object(x.jsx)(Be, {open: h.encapsulation, onCreate: y, keepMounted: !0})]
+                    }), p.encapsulation && Object(x.jsx)(Be, {open: p.encapsulation, onCreate: y, keepMounted: !0})]
                 })
             })
         }
@@ -2290,15 +2290,15 @@
             }));
         var at = f((function (e) {
                 var t = tt(), a = Object(V.a)().t, c = Object(n.useState)(""), i = Object(oe.a)(c, 2), r = i[0], s = i[1],
-                    d = Object(n.useState)(!1), u = Object(oe.a)(d, 2), b = u[0], j = u[1], m = Object(n.useState)(!1),
-                    p = Object(oe.a)(m, 2), h = p[0], g = p[1],
+                    d = Object(n.useState)(!1), u = Object(oe.a)(d, 2), j = u[0], b = u[1], m = Object(n.useState)(!1),
+                    h = Object(oe.a)(m, 2), p = h[0], g = h[1],
                     O = Object(n.useState)({className: "", instructor: "", token: "", itoken: "", direct: !1}),
                     f = Object(oe.a)(O, 2), y = f[0], v = f[1], S = function (e) {
                         return function (t) {
                             v(Object(l.a)(Object(l.a)({}, y), {}, Object(w.a)({}, e, t.target.value)))
                         }
                     }, N = function () {
-                        j(!1), g(!1), v({className: "", instructor: "", token: "", itoken: "", direct: !1})
+                        b(!1), g(!1), v({className: "", instructor: "", token: "", itoken: "", direct: !1})
                     };
                 return Object(x.jsxs)(x.Fragment, {
                     children: [Object(x.jsx)(P, {}), Object(x.jsxs)(R, {
@@ -2321,7 +2321,7 @@
                             className: t.h5,
                             children: [Object(x.jsx)(k.a, {
                                 onClick: function () {
-                                    j(!0)
+                                    b(!0)
                                 },
                                 color: "secondary",
                                 children: Object(x.jsx)("b", {children: a("entrance.instructor detail.1")})
@@ -2355,8 +2355,8 @@
                                 })
                             }
                         })]
-                    }), b && Object(x.jsxs)(pe.a, {
-                        open: b,
+                    }), j && Object(x.jsxs)(he.a, {
+                        open: j,
                         onClose: N,
                         "aria-labelledby": "instructor-token-generator",
                         "aria-describedby": "instructor-token-description",
@@ -2364,7 +2364,7 @@
                         disableEscapeKeyDown: !0,
                         maxWidth: "sm",
                         scroll: "paper",
-                        children: [Object(x.jsx)(he.a, {
+                        children: [Object(x.jsx)(pe.a, {
                             id: "instructor-token-title",
                             children: a("entrance.instructor.tdialog.1")
                         }), Object(x.jsxs)(ge.a, {
@@ -2436,12 +2436,12 @@
                                 children: a("closed")
                             }), Object(x.jsx)(C.a, {
                                 onClick: function () {
-                                    j(!1), g(!0)
+                                    b(!1), g(!0)
                                 }, color: "primary", disabled: !(y.token.length > 0), children: a("next")
                             })]
                         })]
-                    }), h && Object(x.jsx)($e, {
-                        state: h,
+                    }), p && Object(x.jsx)($e, {
+                        state: p,
                         className: y.className,
                         instructor: y.instructor,
                         token: y.token,
@@ -2467,7 +2467,7 @@
         var dt = function (e) {
                 var t = lt(), a = Object(n.useState)(null), c = Object(oe.a)(a, 2), i = c[0], r = c[1],
                     o = Object(n.useState)(!0), s = Object(oe.a)(o, 2), l = s[0], d = s[1], u = Object(n.useState)(!1),
-                    b = Object(oe.a)(u, 2), j = b[0], m = b[1];
+                    j = Object(oe.a)(u, 2), b = j[0], m = j[1];
                 return Object(x.jsx)("div", {
                     children: Object(x.jsxs)("form", {
                         onSubmit: function (t) {
@@ -2503,17 +2503,17 @@
                                     l || m(!0)
                                 },
                                 children: "Upload"
-                            }), j && Object(x.jsx)(ot.a, {size: 24, className: t.buttonProgress})]
+                            }), b && Object(x.jsx)(ot.a, {size: 24, className: t.buttonProgress})]
                         })]
                     })
                 })
             },
             ut = ["https://images.unsplash.com/photo-1613169620329-6785c004d900?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80", "https://images.unsplash.com/photo-1611572698227-3f61a040f13d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80", "https://images.unsplash.com/photo-1605509407676-36601014de0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80", "https://images.unsplash.com/photo-1612192047524-9c90876522b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1187&q=80", "https://images.unsplash.com/photo-1613852706285-4b080230e8db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80", "https://images.unsplash.com/photo-1591931644839-fcbf1c4814ed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"],
-            bt = ut[Math.floor(Math.random() * ut.length)], jt = Object(te.a)((function (e) {
+            jt = ut[Math.floor(Math.random() * ut.length)], bt = Object(te.a)((function (e) {
                 var t;
                 return {
                     background: {
-                        backgroundImage: "url(".concat(bt, ")"),
+                        backgroundImage: "url(".concat(jt, ")"),
                         backgroundColor: "#5d5447",
                         backgroundPosition: "center"
                     },
@@ -2531,11 +2531,11 @@
             })), mt = Object(te.a)((function (e) {
                 return {root: Object(w.a)({}, e.breakpoints.up("sm"), {height: "100vh", minHeight: 800, maxHeight: 1300})}
             }));
-        var pt = c.a.memo(f((function (e) {
-                var t = Object(V.a)().t, a = jt(), c = mt(), i = {token: "", className: "", instructor: "", createDate: ""},
+        var ht = c.a.memo(f((function (e) {
+                var t = Object(V.a)().t, a = bt(), c = mt(), i = {token: "", className: "", instructor: "", createDate: ""},
                     r = Object(n.useState)(i), o = Object(oe.a)(r, 2), s = o[0], l = o[1], d = Object(n.useState)(""),
-                    u = Object(oe.a)(d, 2), b = u[0], j = u[1], m = Object(n.useState)(!1), p = Object(oe.a)(m, 2),
-                    h = p[0], g = p[1];
+                    u = Object(oe.a)(d, 2), j = u[0], b = u[1], m = Object(n.useState)(!1), h = Object(oe.a)(m, 2),
+                    p = h[0], g = h[1];
                 return Object(n.useEffect)((function () {
                     s === i && function () {
                         var e = Object(it.a)(ct.a.mark((function e() {
@@ -2577,7 +2577,7 @@
                                 color: "inherit",
                                 className: a.title,
                                 href: "/",
-                                children: Object(x.jsx)("img", {src: "/assets/logo.png", alt: "logo", className: a.logo})
+                                children: Object(x.jsx)("img", {src: "static/logo.png", alt: "logo", className: a.logo})
                             })
                         })
                     }), Object(x.jsxs)(R, {
@@ -2585,7 +2585,7 @@
                         classes: c,
                         children: [Object(x.jsx)("img", {
                             style: {display: "none"},
-                            src: bt,
+                            src: jt,
                             alt: "prioirty"
                         }), Object(x.jsx)(_, {
                             color: "inherit",
@@ -2601,19 +2601,19 @@
                             className: a.h5,
                             children: ["opened by ", Object(x.jsx)("b", {children: s.instructor}), " on ", s.createDate]
                         }), Object(x.jsx)(se.a, {
-                            value: b,
+                            value: j,
                             onChange: function (e) {
-                                j(e.target.value)
+                                b(e.target.value)
                             },
                             label: t("studentNum"),
                             variant: "outlined",
                             style: {margin: 8, borderColor: "white", borderRadius: 4, backgroundColor: "white"},
                             placeholder: t("studentNum.placeholder"),
                             margin: "normal"
-                        }), h && Object(x.jsx)(dt, {
-                            name: s.token, id: b, onCreate: function (t, a) {
+                        }), p && Object(x.jsx)(dt, {
+                            name: s.token, id: j, onCreate: function (t, a) {
                                 t ? e.history.push({
-                                    pathname: "".concat(e.match.url, "/success/"),
+                                    pathname: "".concat(e.match.url, "/success/}"),
                                     state: {detail: a}
                                 }) : e.history.push("/error")
                             }
@@ -2621,12 +2621,12 @@
                     }), Object(x.jsx)(ie, {})]
                 })
             }))),
-            ht = "https://images.unsplash.com/photo-1614179924047-e1ab49a0a0cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+            pt = "https://images.unsplash.com/photo-1614179924047-e1ab49a0a0cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
             gt = Object(te.a)((function (e) {
                 var t;
                 return {
                     background: {
-                        backgroundImage: "url(".concat(ht, ")"),
+                        backgroundImage: "url(".concat(pt, ")"),
                         backgroundColor: "#5d5447",
                         backgroundPosition: "center"
                     },
@@ -2686,7 +2686,7 @@
                                 color: "inherit",
                                 className: t.title,
                                 href: "/",
-                                children: Object(x.jsx)("img", {src: "/assets/logo.png", alt: "logo", className: t.logo})
+                                children: Object(x.jsx)("img", {src: "static/logo.png", alt: "logo", className: t.logo})
                             })
                         })
                     }), Object(x.jsxs)(R, {
@@ -2694,7 +2694,7 @@
                         classes: a,
                         children: [Object(x.jsx)("img", {
                             style: {display: "none"},
-                            src: ht,
+                            src: pt,
                             alt: "prioirty"
                         }), Object(x.jsx)(_, {
                             color: "inherit",
@@ -2796,7 +2796,7 @@
                             color: "inherit",
                             className: t.title,
                             href: "/",
-                            children: Object(x.jsx)("img", {src: "/assets/logo.png", alt: "logo", className: t.logo})
+                            children: Object(x.jsx)("img", {src: "static/logo.png", alt: "logo", className: t.logo})
                         })
                     })
                 }), Object(x.jsxs)(R, {
@@ -2819,16 +2819,19 @@
         })));
         var Nt = function () {
             return Object(x.jsx)(o.a, {
-                basename: "/jchecker",
                 children: Object(x.jsxs)(s.d, {
                     children: [Object(x.jsx)(s.b, {
                         exact: !0,
                         path: "/",
                         component: re
-                    }), Object(x.jsx)(s.b, {exact: !0, path: "/classes", component: me}), Object(x.jsx)(s.b, {
+                    }), Object(x.jsx)(s.b, {
+                        exact: !0,
+                        path: "/classes",
+                        component: me
+                    }), Object(x.jsx)(s.b, {
                         exact: !0,
                         path: "/classes/:token",
-                        component: pt
+                        component: ht
                     }), Object(x.jsx)(s.b, {
                         exact: !0,
                         path: "/classes/:token/success/:state",
@@ -2841,10 +2844,11 @@
                         exact: !0,
                         path: "/instructors/:token",
                         component: xt
-                    }), Object(x.jsx)(s.b, {exact: !0, path: "/error", component: vt}), Object(x.jsx)(s.a, {
-                        path: "*",
-                        to: "/"
-                    })]
+                    }), Object(x.jsx)(s.b, {
+                        exact: !0,
+                        path: "/error",
+                        component: vt
+                    }), Object(x.jsx)(s.a, {path: "*", to: "/"})]
                 })
             })
         }, Dt = function (e) {
@@ -2856,4 +2860,4 @@
         r.a.render(Object(x.jsx)(c.a.StrictMode, {children: Object(x.jsx)(Nt, {})}), document.getElementById("root")), Dt()
     }
 }, [[162, 1, 2]]]);
-//# sourceMappingURL=main.f3e1f8f3.chunk.js.map
+//# sourceMappingURL=main.78864e1d.chunk.js.map
