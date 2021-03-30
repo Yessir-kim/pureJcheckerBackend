@@ -19,8 +19,8 @@ public class TokenController {
 
     private TokenService tokenService;
 
-    @RequestMapping(value="/find", method= RequestMethod.POST, produces={"application/json"})
-    public ResponseEntity<String> find(@RequestBody String token) {
+    @RequestMapping(value="/find", method= RequestMethod.GET, produces={"application/json"})
+    public ResponseEntity<String> find(@RequestParam String token) {
 
         Token result = tokenService.getToken(token);
 

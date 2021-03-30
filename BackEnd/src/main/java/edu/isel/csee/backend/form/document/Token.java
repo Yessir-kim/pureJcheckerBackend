@@ -1,9 +1,6 @@
 package edu.isel.csee.backend.form.document;
 
-import edu.isel.csee.backend.form.Inherit;
-import edu.isel.csee.backend.form.Required;
-import edu.isel.csee.backend.form.State;
-import edu.isel.csee.backend.form.Testcase;
+import edu.isel.csee.backend.form.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +16,8 @@ public class Token {
 
     @Id
     private String id;
-    private String token;
+    private String token; // students
+    private String itoken;
     private String group;
     private String className;
     private String instructor;
@@ -40,4 +38,5 @@ public class Token {
     private State encapsulation;
     private Inherit inheritSuper;
     private Inherit inheritInterface;
+    private Count count;
 }

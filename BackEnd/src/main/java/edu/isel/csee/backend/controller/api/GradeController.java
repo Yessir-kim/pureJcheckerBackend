@@ -46,6 +46,12 @@ public class GradeController {
         return ResponseEntity.ok(gradeService.saveGrade(grade));
     }
 
+    @RequestMapping(value="/", method=RequestMethod.GET)
+    public ResponseEntity<?> list(@RequestParam("itoken") String itoken) {
+
+        return ResponseEntity.ok( gradeService.getGradeList(itoken) );
+    }
+
     @RequestMapping(value="/delete/{name}/{studentNum}", method=RequestMethod.DELETE)
     public ResponseEntity<?> delete(@PathVariable("token") String token,
                                     @PathVariable("studentNum") String studentNum) {
@@ -58,7 +64,7 @@ public class GradeController {
                                      @RequestParam(value = "token") String token,
                                      @RequestParam("file") MultipartFile multipartFile) {
 
-        String output = "assignments/" + studentNum + "/";
+        String output = "assignments/" ;
         String filePath = output + multipartFile.getOriginalFilename();
         File target = new File(filePath);
         String result = "";
@@ -72,25 +78,25 @@ public class GradeController {
 
             new Extractor().unzip(filePath, output);
 
-            result = new CoreGrader().start(output, new Gson().toJson(policy));
+            result = new CoreGrader().start("./"+filePath.replace(".zip", ""), new Gson().toJson(policy));
 
             ObjectMapper objectMapper = new ObjectMapper();
 
-            Grade toSave = objectMapper.readValue(result, Grade.class) ;
+            Grade toSave = objectMapper.readValue(result, Grade.class);
 
             DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
             String nowDate = format.format(new Date());
 
             toSave.setGradingDate(nowDate);
             toSave.setStudentNum(studentNum);
+            toSave.setItoken(policy.getItoken());
             gradeService.saveGrade(toSave);
-
         }
-        catch (Exception e) { throw new RestException(HttpStatus.INTERNAL_SERVER_ERROR, "Grading failed!"); }
+        catch (Exception e) { System.out.println(e.getMessage()); throw new RestException(HttpStatus.INTERNAL_SERVER_ERROR, "Grading failed!"); }
         finally
         {
             FileUtils.deleteQuietly(target);
-            deleteFile(output);
+            // deleteFile(output);
         }
 
         return ResponseEntity.ok(result);

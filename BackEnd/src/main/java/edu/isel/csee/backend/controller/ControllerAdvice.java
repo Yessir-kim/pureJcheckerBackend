@@ -13,9 +13,12 @@ public class ControllerAdvice {
     @ExceptionHandler(RestException.class)
     public ResponseEntity<Map<String, Object>> handler(RestException e) {
         Map<String, Object> resBody = new HashMap<>();
-        resBody.put("errorMessage", e.getMessage());
+        Map<String, Object> resSub = new HashMap<>();
+        resSub.put("msg", e.getMessage());
+        resBody.put("data", resSub);
+        resBody.put("status", e.getStatus().value());
 
-        return new ResponseEntity<>(resBody, e.getStatus());
+        return new ResponseEntity(resBody, e.getStatus());
     }
 
 }

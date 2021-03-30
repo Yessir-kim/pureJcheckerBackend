@@ -2,12 +2,14 @@ package edu.isel.csee.backend.service;
 
 import edu.isel.csee.backend.controller.RestException;
 import edu.isel.csee.backend.form.document.Grade;
+import edu.isel.csee.backend.form.document.Token;
 import edu.isel.csee.backend.repository.GradeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -16,6 +18,9 @@ public class GradeService {
 
     @Autowired
     public GradeService(GradeRepository gradeRepository) { this.gradeRepository = gradeRepository; }
+
+    @Transactional
+    public List<Grade> getGradeList(String itoken) { return gradeRepository.findByItoken(itoken); }
 
     @Transactional
     public Grade saveGrade(Grade grade) {
@@ -49,12 +54,13 @@ public class GradeService {
                         gradeEntity.getId(),
                         gradeEntity.getStudentNum(),
                         gradeEntity.getToken(),
+                        gradeEntity.getItoken(),
                         gradeEntity.getClassName(),
                         gradeEntity.getInstructor(),
                         gradeEntity.getGradingDate(),
                         gradeEntity.getPoint(),
                         gradeEntity.getCompile(),
-                        gradeEntity.getRuntimeResult(),
+                        gradeEntity.getRuntimeCompare(),
                         gradeEntity.getPackages(),
                         gradeEntity.getClasses(),
                         gradeEntity.getCustomException(),
@@ -66,6 +72,7 @@ public class GradeService {
                         gradeEntity.getEncapsulation(),
                         gradeEntity.getInheritSuper(),
                         gradeEntity.getInheritInterface(),
+                        gradeEntity.getCount(),
                         gradeEntity.getResult()
                 );
 

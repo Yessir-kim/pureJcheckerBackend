@@ -1,8 +1,11 @@
 package edu.isel.csee.backend.service;
 
-import edu.isel.csee.backend.repository.*;
+import edu.isel.csee.backend.repository.GradeRepository;
+import edu.isel.csee.backend.repository.TokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+
+;
 
 public class SpringConfig {
 

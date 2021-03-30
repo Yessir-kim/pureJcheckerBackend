@@ -19,12 +19,13 @@ public class Grade {
     private String id;
     private String studentNum;
     private String token;
+    private String itoken;
     private String className;
     private String instructor;
     private String gradingDate;
     private Double point;
-    private Violation compile;
-    private Violation runtimeResult;
+    private ViolationCompile compile;
+    private Violation runtimeCompare;
     private Violation packages;
     private Violation classes;
     private Violation customException;
@@ -36,5 +37,6 @@ public class Grade {
     private Violation encapsulation;
     private Violation inheritSuper;
     private Violation inheritInterface;
+    private Violation count;
     private Double result;
 }

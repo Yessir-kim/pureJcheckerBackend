@@ -18,10 +18,6 @@ public class RestException extends RuntimeException {
         return status;
     }
 
-    public void setStatus(HttpStatus status) {
-        this.status = status;
-    }
-
     public String getMessage() {
         return message;
     }

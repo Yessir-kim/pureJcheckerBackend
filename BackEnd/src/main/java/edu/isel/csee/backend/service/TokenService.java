@@ -52,6 +52,7 @@ public class TokenService {
                 (
                         tokenEntity.getId(),
                         tokenEntity.getToken(),
+                        tokenEntity.getItoken(),
                         tokenEntity.getGroup(),
                         tokenEntity.getClassName(),
                         tokenEntity.getInstructor(),
@@ -71,7 +72,8 @@ public class TokenService {
                         tokenEntity.getJavadoc(),
                         tokenEntity.getEncapsulation(),
                         tokenEntity.getInheritSuper(),
-                        tokenEntity.getInheritInterface()
+                        tokenEntity.getInheritInterface(),
+                        tokenEntity.getCount()
                 );
 
         return result;
