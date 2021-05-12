@@ -7,5 +7,6 @@ import lombok.Setter;
 @Setter
 public class State {
     private boolean state;
+    private boolean buildTool;
     private Double deductPoint;
 }

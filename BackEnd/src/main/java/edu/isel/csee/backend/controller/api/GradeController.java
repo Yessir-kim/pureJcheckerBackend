@@ -64,28 +64,38 @@ public class GradeController {
                                      @RequestParam(value = "token") String token,
                                      @RequestParam("file") MultipartFile multipartFile) {
 
-        String output = "assignments/" ;
+        DateFormat format = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss_");
+        String output = "assignments/" + studentNum + "/auto/";
+        String result;
+        Grade toSave;
+        // String output = "/data/jchecker/" + studentNum + "/";
+
         String filePath = output + multipartFile.getOriginalFilename();
         File target = new File(filePath);
-        String result = "";
 
         try
         {
             InputStream stream = multipartFile.getInputStream();
-            FileUtils.copyInputStreamToFile(stream, target);
+            FileUtils .copyInputStreamToFile(stream, target);
 
             Token policy = tokenService.getToken(token);
 
             new Extractor().unzip(filePath, output);
 
-            result = new CoreGrader().start("./"+filePath.replace(".zip", ""), new Gson().toJson(policy));
+            target.renameTo(new File(output + format.format(new Date()) + multipartFile.getOriginalFilename()));
+
+            deleteTrashFile(output);
+
+            result = new CoreGrader().start(output, new Gson().toJson(policy));
 
             ObjectMapper objectMapper = new ObjectMapper();
 
-            Grade toSave = objectMapper.readValue(result, Grade.class);
+            toSave = objectMapper.readValue(result, Grade.class);
 
-            DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+            format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String nowDate = format.format(new Date());
+
+            System.out.println(nowDate);
 
             toSave.setGradingDate(nowDate);
             toSave.setStudentNum(studentNum);
@@ -96,10 +106,24 @@ public class GradeController {
         finally
         {
             FileUtils.deleteQuietly(target);
-            // deleteFile(output);
+            deleteFile(output);
         }
 
-        return ResponseEntity.ok(result);
+        return ResponseEntity.ok(new Gson().toJson(toSave));
+    }
+
+    public void deleteTrashFile(String crtPath)
+    {
+        File FileList = new File(crtPath);
+
+        String fileList[] = FileList.list();
+
+        for(int i = 0; i < fileList.length; i++)
+        {
+            String FileName = fileList[i];
+
+            if (FileName.contains("__MACOSX")) deleteFile(crtPath + FileName);
+        }
     }
 
     public void deleteFile(String path)

@@ -9,8 +9,8 @@ import java.util.List;
 @Setter
 public class Inherit {
     private boolean state;
-    private List<String> inheritClass;
-    private List<String> target;
+    private List<String> origins;
+    private List<String> inherit;
     private Double deductPoint;
     private Double maxDeduct;
 }

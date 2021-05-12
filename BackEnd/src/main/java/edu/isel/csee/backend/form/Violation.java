@@ -9,6 +9,7 @@ import java.util.List;
 @Setter
 public class Violation {
     private boolean violation;
+    private boolean bViolation;
     private List<String> violationNumber;
     private Integer violationCount;
     private Double deductedPoint;

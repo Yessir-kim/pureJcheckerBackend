@@ -1,3 +1,0 @@
-./src/edu/handong/csee/java/lab04/Customer.java
-./src/edu/handong/csee/java/lab04/Reservation.java
-./src/edu/handong/csee/java/lab04/GraceTheTable.java

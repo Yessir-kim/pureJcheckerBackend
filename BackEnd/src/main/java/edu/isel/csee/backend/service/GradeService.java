@@ -52,6 +52,7 @@ public class GradeService {
         Grade grade = new Grade
                 (
                         gradeEntity.getId(),
+                        gradeEntity.getIsDirect(),
                         gradeEntity.getStudentNum(),
                         gradeEntity.getToken(),
                         gradeEntity.getItoken(),
@@ -60,7 +61,7 @@ public class GradeService {
                         gradeEntity.getGradingDate(),
                         gradeEntity.getPoint(),
                         gradeEntity.getCompile(),
-                        gradeEntity.getRuntimeCompare(),
+                        gradeEntity.getOracle(),
                         gradeEntity.getPackages(),
                         gradeEntity.getClasses(),
                         gradeEntity.getCustomException(),

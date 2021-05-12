@@ -61,7 +61,7 @@ public class TokenService {
                         tokenEntity.getDueDate(),
                         tokenEntity.getPoint(),
                         tokenEntity.getCompiled(),
-                        tokenEntity.getRuntimeCompare(),
+                        tokenEntity.getOracle(),
                         tokenEntity.getPackages(),
                         tokenEntity.getClasses(),
                         tokenEntity.getCustomException(),
@@ -73,7 +73,8 @@ public class TokenService {
                         tokenEntity.getEncapsulation(),
                         tokenEntity.getInheritSuper(),
                         tokenEntity.getInheritInterface(),
-                        tokenEntity.getCount()
+                        tokenEntity.getCount(),
+                        tokenEntity.getFilePath()
                 );
 
         return result;

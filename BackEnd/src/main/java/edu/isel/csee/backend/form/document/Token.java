@@ -16,7 +16,7 @@ public class Token {
 
     @Id
     private String id;
-    private String token; // students
+    private String token;
     private String itoken;
     private String group;
     private String className;
@@ -26,7 +26,7 @@ public class Token {
     private String dueDate;
     private Double point;
     private State compiled;
-    private Testcase runtimeCompare;
+    private Oracle oracle;
     private Required packages;
     private Required classes;
     private Required customException;
@@ -39,4 +39,5 @@ public class Token {
     private Inherit inheritSuper;
     private Inherit inheritInterface;
     private Count count;
+    private String filePath;
 }

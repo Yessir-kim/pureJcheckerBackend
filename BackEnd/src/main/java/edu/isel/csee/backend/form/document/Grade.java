@@ -15,8 +15,10 @@ import javax.persistence.Id;
 @Setter
 @Getter
 public class Grade {
+
     @Id
     private String id;
+    private String isDirect;
     private String studentNum;
     private String token;
     private String itoken;
@@ -24,8 +26,8 @@ public class Grade {
     private String instructor;
     private String gradingDate;
     private Double point;
-    private ViolationCompile compile;
-    private Violation runtimeCompare;
+    private Violation compile;
+    private Violation oracle;
     private Violation packages;
     private Violation classes;
     private Violation customException;
@@ -39,4 +41,5 @@ public class Grade {
     private Violation inheritInterface;
     private Violation count;
     private Double result;
+
 }
