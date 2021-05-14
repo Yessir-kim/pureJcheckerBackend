@@ -61,6 +61,7 @@ public class GradeService {
                         gradeEntity.getGradingDate(),
                         gradeEntity.getPoint(),
                         gradeEntity.getCompile(),
+                        gradeEntity.getDelay(),
                         gradeEntity.getOracle(),
                         gradeEntity.getPackages(),
                         gradeEntity.getClasses(),

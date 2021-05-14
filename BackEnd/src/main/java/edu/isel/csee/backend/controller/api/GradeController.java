@@ -106,7 +106,7 @@ public class GradeController {
         finally
         {
             FileUtils.deleteQuietly(target);
-            deleteFile(output);
+            // deleteFile(output);
         }
 
         return ResponseEntity.ok(new Gson().toJson(toSave));

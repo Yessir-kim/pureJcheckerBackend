@@ -1,5 +1,6 @@
 package edu.isel.csee.backend.form.document;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import edu.isel.csee.backend.form.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,21 +24,22 @@ public class Token {
     private String instructor;
     private boolean feedback;
     private String createDate;
+    // 프론트엔드에서 추가적으로 구현해야될 부분
     private String dueDate;
     private Double point;
-    private State compiled;
-    private Oracle oracle;
-    private Required packages;
-    private Required classes;
-    private Required customException;
-    private Required customStructure;
-    private Required overriding;
-    private Required overloading;
-    private State thread;
-    private State javadoc;
-    private State encapsulation;
-    private Inherit inheritSuper;
-    private Inherit inheritInterface;
-    private Count count;
+    private CompileType compiled;
+    private OracleType oracle;
+    private RequiredType packages;
+    private RequiredType classes;
+    private RequiredType customException;
+    private RequiredType customStructure;
+    private RequiredType overriding;
+    private RequiredType overloading;
+    private BasicType thread;
+    private BasicType javadoc;
+    private BasicType encapsulation;
+    private InheritType inheritSuper;
+    private InheritType inheritInterface;
+    private CountType count;
     private String filePath;
 }

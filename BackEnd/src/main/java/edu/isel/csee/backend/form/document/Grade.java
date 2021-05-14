@@ -1,5 +1,6 @@
 package edu.isel.csee.backend.form.document;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import edu.isel.csee.backend.form.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,20 +27,21 @@ public class Grade {
     private String instructor;
     private String gradingDate;
     private Double point;
-    private Violation compile;
-    private Violation oracle;
-    private Violation packages;
-    private Violation classes;
-    private Violation customException;
-    private Violation customStructure;
-    private Violation overriding;
-    private Violation overloading;
-    private Violation thread;
-    private Violation javadoc;
-    private Violation encapsulation;
-    private Violation inheritSuper;
-    private Violation inheritInterface;
-    private Violation count;
+    private CompileViolationType compile;
+    private ViolationType delay;
+    private ViolationType oracle;
+    private ViolationType packages;
+    private ViolationType classes;
+    private ViolationType customException;
+    private ViolationType customStructure;
+    private ViolationType overriding;
+    private ViolationType overloading;
+    private ViolationType thread;
+    private ViolationType javadoc;
+    private ViolationType encapsulation;
+    private ViolationType inheritSuper;
+    private ViolationType inheritInterface;
+    private ViolationType count;
     private Double result;
 
 }
